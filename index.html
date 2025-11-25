@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7-F SURVIVAL Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">7-F SURVIVAL</div>
+        <button id="adminBtn" class="mc-btn small">⚙️</button>
+    </header>
+
+    <div class="main-container">
+        <div class="hero-card">
+            <div class="status-badge offline" id="statusBadge">YÜKLENİYOR...</div>
+            
+            <h1 class="server-title">7-F SURVIVAL</h1>
+            <p class="server-desc">Arkadaşlarınla hayatta kalma mücadelesine katıl!</p>
+
+            <div class="info-grid">
+                <div class="info-item">
+                    <span>IP ADRESİ</span>
+                    <strong id="ipDisplay">7-F-SURVIVAL.aternos.me</strong>
+                </div>
+                <div class="info-item">
+                    <span>PORT</span>
+                    <strong>19132</strong>
+                </div>
+                <div class="info-item">
+                    <span>OYUNCULAR</span>
+                    <strong id="playerCount">-/-</strong>
+                </div>
+            </div>
+
+            <a href="minecraft://?addExternalServer=7-F-SURVIVAL|7-F-SURVIVAL.aternos.me:19132" class="mc-btn big-green">
+                🚀 OYUNA BAĞLAN
+            </a>
+            
+            <a href="https://mcpedl.org/uploads_files/21-11-2025/minecraft-1-21-124.apk" class="mc-btn big-orange">
+                📥 MINECRAFT'I EDİN
+            </a>
+
+            <p class="sub-text">Önce oyunu indir, sonra bağlan!</p>
+        </div>
+    </div>
+
+    <div id="loginModal" class="modal hidden">
+        <div class="modal-content">
+            <h3>Yönetici Girişi</h3>
+            <input type="password" id="pinInput" placeholder="PIN Kodu" maxlength="4">
+            <button id="loginSubmit" class="mc-btn">Giriş</button>
+            <button id="closeModal" class="mc-btn red">İptal</button>
+        </div>
+    </div>
+
+    <div id="adminPanel" class="modal hidden">
+        <div class="modal-content">
+            <h3>Sunucu Kontrolü</h3>
+            <p>Sunucuyu açmak için panele git:</p>
+            <a href="https://aternos.org/servers/" target="_blank" class="mc-btn big-blue">
+                🔧 ATERNOS PANELİNE GİT
+            </a>
+            <button id="closeAdmin" class="mc-btn red top-margin">Çıkış</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
